@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>unPulled Alpha 0.0.1</title>
+    <meta name="description" content="Application for creating listings for pulls not in the system yet.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- BEGIN NAV -->
+    <nav>
+        <div class="logo" id="logo">unPulled</div>
+        <span class="version">Version 0.0.1</span>
+    </nav>
+    <!-- END NAV -->
+
+    <main>
+        <div class="userInput">
+            <!-- BEGIN FORM -->
+            <form id="details" class="form" autocomplete="off">
+                <input type="text" class="shortInput" required="true" id="itemNumber" placeholder="Item number">
+                <input type="text" class="shortInput" required="true" id="title" placeholder="Listing title">
+                <input type="textarea" rows="30" class="shortInput" required="true" id="features" placeholder="Features">
+                <input type="textarea" class="shortInput" required="true" id="included" placeholder="What's included?">
+                <input type="textarea" class="shortInput" id="notIncluded" placeholder="What's not included (Optional)">
+                <input type="textarea" class="shortInput" required="true" id="condition" placeholder="Condition">
+            </form>
+            <div class="buttons">
+                <button class="submit" id="submit">Submit</button>
+                <button type="reset" form="details" value="Reset">Clear</button>
+            </div>
+        </div>
+        <!-- END FORM -->
+
+        <!-- BEGIN RESULTS -->
+        <div class="results" id="results">
+            <h1>unPulled</h1>
+            <p class="intro">On quite a few occasions, items are pulled, but haven't reached the database yet. With this little web app, you
+                can get your listings written and just copy and paste when they hit the system.
+            </p>
+            <hr>
+            <h2>Result</h2>
+            <p id="resultText">Result goes here.</p>
+        </div>
+        <!-- END RESULTS -->
+    </main>
+    <script src="main/app.js"></script>
+</body>
+
+</html>

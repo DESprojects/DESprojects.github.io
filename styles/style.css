@@ -2,13 +2,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #FFF;
-    background: #0F2027;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    margin: 0;
+background-color: #ff9d00;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='0' stroke-opacity='0' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+margin: 0;
 }
 
 hr {
@@ -18,59 +16,202 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.089);
 }
 
-/* Navbar Styles */
+h3 {
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar Styles =====================================================================================================*/
 
 nav {
-    background-color: #333;
+    background-color: #dd4b39;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-between;
     font-weight: 900;
     width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    z-index: 100;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+#subLogo {
+    font-weight: 400;
 }
 
 .logo {
-    padding-left: 15px;
     height: 70px;
     display: flex;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-bottom: 0;
+    font-weight: 900;
+    user-select: none;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 .version {
     font-weight: 300;
     padding-left: 15px;
     margin-top: 0;
+    font-size: .8rem;
+    user-select: none;
 }
 
 main {
     display: flex;
     flex-direction: row;
-    margin: 30px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-/* User input section styles */
+/* Aside Styles ======================================================================================================*/
+
+aside {
+    min-width: 240px;
+    background:  rgba(34, 45, 50, 0.8);
+    padding-top: 25px;
+    height: 100%;
+    position: fixed;
+    left: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s;
+    overflow: hidden;
+} 
+
+.asideContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+#noListingsText {
+    display: block;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: .9rem;
+}
+aside h3 {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.completed {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+.completed li {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.089);
+}
+
+.completed li:hover {
+    cursor: pointer;
+    border-left: 15px solid #FDFDFD;
+}
+
+.deleteListings {
+    background: red;
+    height: 45px;
+    width: 80%;
+    font-size: .9rem;
+    font-weight: 400;
+    opacity: 0.7;
+    border-radius: 0;
+    margin-bottom: 100px;
+}
+
+.deleteListings:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.newListing {
+    width: 20%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    font-weight: 700;
+    justify-content: center;
+    background: green;
+    border-radius: 10px;
+}
+
+.newListing:hover {
+    width: 80%;
+}
+
+/* User input section styles =========================================================================================*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
 
 .userInput {
-    max-width: 50%;
     min-width: 300px;
     display: flex;
+    padding: 30px;
     flex-direction: column;
     align-content: center;
-}
-
-.form {
     background: #FDFDFD;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
     -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
     -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.userInput h2 {
+    color: #333;
+    margin-left: 10px;
+}
+
+.form {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .shortInput {
@@ -85,24 +226,40 @@ main {
     border-bottom: 1px solid #ddd;
     background: transparent;
     margin-bottom: 10px;
-    font: 1.25rem 'Montserrat', sans-serif;
-    min-height: 45px;
+    font: 1rem 'Montserrat', sans-serif;
+    transform: scale(0.98);
+}
+
+.input[type="text"] {
+    height: 45px;
+}
+
+.shortInput:focus {
+    transform: scale(1);
 }
 
 .buttons {
-    margin-top: 20px;
-    width: 100%;
     display: flex;
+    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.buttons button {
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transform: scale(0.98);
 }
 
 button {
     padding: 7px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 300;
-    height: 45px;
-    width: 40%;
+    height: 40px;
+    width: 20%;
     color: #FFF;
     border: none;
     border-radius: 2px;
@@ -110,7 +267,11 @@ button {
 }
 
 button:hover {
-    transform: scale(0.95);
+    transform: scale(1);
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 
 button {
@@ -118,10 +279,67 @@ button {
 }
 
 button[type="reset"] {
-    background: red;
+    background: transparent;
+    border: 2px solid #333;
+    color: #333;;
+    height: 40px;
 }
 
-/* Results styles */
+button[type="reset"]:hover {
+    background: #333;
+    color: #FDFDFD;
+}
+
+/* Modal Styling =====================================================================================================*/
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    transition: all .1s ease-out;
+}
+
+.copiedModal {
+    width: 400px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+/* Listing Styles ====================================================================================================*/
+
+#listing {
+    width: 600px;
+    display: none;
+    color: #333;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+    background: #FDFDFD;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+/* Results styles ====================================================================================================*/
 
 .results {
     background: #FDFDFD;
@@ -152,12 +370,25 @@ button[type="reset"] {
     width: 100%;
 }
 
-.results textarea {
+textarea {
     resize: none;
     width: 90%;
-    height: 30rem;
 }
 
 .intro {
     font-size: .9rem;
+}
+
+/* Footer Styles =====================================================================================================*/
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    padding-left: 15px;
+}
+
+/* Hidden ============================================================================================================*/
+
+.hidden {
+    opacity: 0;
 }

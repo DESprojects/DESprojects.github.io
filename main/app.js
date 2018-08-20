@@ -19,9 +19,9 @@ console.log('JS Loaded');
 // Add click listeners==================================================================================================
 
 submit.addEventListener('click', function (event) {
-    displayResult();
-    formReset();
-    hideNoListingsText();
+        displayResult();
+        formReset();
+        hideNoListingsText();
 });
 
 logo.addEventListener('click', function (event){

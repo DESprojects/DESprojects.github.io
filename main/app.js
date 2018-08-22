@@ -78,16 +78,16 @@ Please Note: All included items are shown in the pictures
 <br/>&nbsp;<br/>
 ${title}<br/>
 ${sku}
-<br/>&nbsp;<br/>
+<br/>&nbsp;
 <strong>Features:</strong><br/>
 ${features}
-<br/>&nbsp;<br/>
+<br/>&nbsp;
 <strong>What's included:</strong><br/>
 ${included}
-<br/>&nbsp;<br/>
+<br/>&nbsp;
 <strong>What's not included:</strong><br/>
 ${notIncluded}
-<br/>&nbsp;<br/>
+<br/>&nbsp;
 <strong>Condition:</strong><br/>
 ${condition}
 `;
@@ -162,13 +162,13 @@ function fillTemplate(i) {
         <br/>&nbsp;<br/>
         <strong>Features:</strong><br/>
         <ul>${breakMultilines(features)}</ul>
-        <br/>&nbsp;<br/>
+        <br/>&nbsp;
         <strong>What's included:</strong><br/>
         <ul>${breakMultilines(included)}</ul>
-        <br/>&nbsp;<br/>
+        <br/>&nbsp;
         <strong>What's not included:</strong><br/>
         <ul>${breakMultilines(notIncluded)}</ul>
-        <br/>&nbsp;<br/>
+        <br/>&nbsp;
         <strong>Condition:</strong><br/>
         <ul>${breakMultilines(condition)}</ul>`;
 

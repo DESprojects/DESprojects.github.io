@@ -233,7 +233,7 @@ nav h3 {
     border-bottom: 1px solid #ddd;
     background: transparent;
     margin-bottom: 10px;
-    font: 1rem 'Montserrat', sans-serif;
+    font: .9rem 'Montserrat', sans-serif;
     transform: scale(0.98);
 }
 
@@ -263,7 +263,7 @@ nav h3 {
 
 button {
     padding: 7px;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 300;
     height: 40px;
     width: 20%;

@@ -2,9 +2,12 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #FFF;
-    background-color: #ff9d00;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='0' stroke-opacity='0' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
+    background: #1D4350;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     margin: 0;
     height: 99vh;
@@ -90,18 +93,26 @@ main {
     height: 100%;
 }
 
+footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    right: 20px;
+    z-index: -999;
+}
+
 /* Aside Styles ======================================================================================================*/
 
 nav {
-    min-width: 240px;
-    background: rgba(34, 45, 50, 0.8);
+    width: 240px;
+    background: rgba(34, 45, 50, 0.5);
     padding-top: 25px;
     height: 100%;
     position: fixed;
     left: 30px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -142,27 +153,27 @@ nav h3 {
     height: 35px;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
     transition: all .3s;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.089);
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
 }
 
 .completed li:hover {
     cursor: pointer;
-    border-left: 15px solid #FDFDFD;
+    background: #555;
 }
 
 .deleteListings {
     background: red;
     height: 45px;
-    width: 80%;
+    width: 100%;
     font-size: .9rem;
     font-weight: 400;
     opacity: 0.7;
     border-radius: 0;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .deleteListings:hover {
@@ -184,6 +195,47 @@ nav h3 {
 
 .newListing:hover {
     width: 80%;
+}
+
+.deleteSpan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    color: #FDFDFD;
+    width: 0;
+    transition: all .3s;
+    height: 35px;
+    margin-right: 25px;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.completed li:hover .deleteSpan {
+    width: 40px;
+    opacity: 0.7%;
+}
+
+.deleteSpan:hover {
+    opacity: 1 !important;
+}
+
+.bottomBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #555;
+}
+
+.bottomBar h3 {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+#listingsCount {
+    font-weight: 400;
 }
 
 /* User input section styles =========================================================================================*/

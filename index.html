@@ -22,9 +22,6 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-
-
     <main>
         <div class="modal">
             <div class="copiedModal" id="copiedModal">
@@ -36,19 +33,25 @@
         <nav>
             <div class="asideContainer">
                 <div class="logo" id="logo">
-                    <span id="subLogo">un</span>Pulled</div>
+                    <span id="subLogo">un</span>Pulled
+
+                </div>
                 <h3>Listings:</h3>
-                <p id="noListingsText">No listings</p>
+                <p id="noListingsText">No listings yet</p>
                 <ul id="completed" class="completed">
                 </ul>
                 <button class="newListing" id="newListing">
                     <i class="fas fa-plus-circle fa-2x"></i>
                 </button>
             </div>
-            <button class="deleteListings" id="deleteListings">
-                <i class="fas fa-trash-alt fa-2x"></i>&nbsp;&nbsp;Delete Listings</button>
+            <div class="bottomBar">
+                <h3>Number of Listings:
+                    <span id="listingsCount">0</span>
+                </h3>
+                <button class="deleteListings" id="deleteListings">
+                    <i class="fas fa-trash-alt fa-2x"></i>&nbsp;&nbsp;Delete All Listings</button>
+            </div>
         </nav>
-
         <div class="content">
             <!-- BEGIN FORM -->
             <div class="userInput">
@@ -66,23 +69,18 @@
                     <button class="submit" id="submit">
                         <i class="fas fa-check"></i>
                         &nbsp;Submit</button>
-
                 </div>
             </div>
             <!-- END FORM -->
-
-
             <!-- BEGIN RESULTS -->
             <div id="listing">
                 <h2>Listing:</h2>
                 <p id="resultText">Listing will appear here.</p>
             </div>
             <!-- END RESULTS -->
-
-
         </div>
-
     </main>
+    <footer><p id="version">Version 0.0.3</p></footer>
     <script src="main/app.js"></script>
 </body>
 

@@ -20,6 +20,7 @@ console.log('JS Loaded');
 
 submit.addEventListener('click', function (event) {
         displayResult();
+        changeListingsCount();
         formReset();
         hideNoListingsText();
 });
@@ -104,6 +105,7 @@ function addToUi(sku) {
     var li = document.createElement('li');
     li.setAttribute('id', sku)
     li.setAttribute('class', 'listingLink')
+    li.innerHTML = '<span class="deleteSpan"><i class="fas fa-trash-alt"></i></span>';
     li.appendChild(document.createTextNode(sku));
     ul.appendChild(li)
     li.addEventListener('click', function(){
@@ -114,6 +116,8 @@ function addToUi(sku) {
         }
         switchToListing();
     })
+
+    addDeleteButton();
 }
 
 // Copy text to clipboard==============================================================================================
@@ -182,6 +186,7 @@ function fillTemplate(i) {
 function removeListings(){
     document.getElementById('completed').innerHTML = '';
     listings = [];
+    changeListingsCount();
 }
 
 // Switch display to flex on Submit click ==============================================================================
@@ -211,8 +216,6 @@ function breakMultilines(str) {
     return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
 }
 
-// Animations ==========================================================================================================
-
 // Hide "No Listings Yet" ==============================================================================================
 
 function hideNoListingsText() {
@@ -239,4 +242,34 @@ function displayModal() {
         modal.style.display = 'none';
         modal.style.opacity = '.9'
     },850);
+}
+
+// Add Delete button to listing 
+
+function addDeleteButton(){
+    let buttons = document.querySelectorAll('.deleteSpan');
+
+    buttons.forEach(function(button){
+        button.addEventListener('click', function(event){
+            event.stopPropagation();
+            //Remove listing from array
+            for(let i=0; i<listings.length; i++){
+                if(listings[i].sku === event.currentTarget.parentNode.id){
+                    listings.splice(i,1);
+                }
+            }
+            //Remove listing from DOM
+            event.currentTarget.parentNode.remove();
+            changeListingsCount();
+            if(listings.length === 0){
+                displayNoListingsText();
+            };
+        });
+    });
+}
+
+//Change Number of Listings Count
+
+function changeListingsCount(){
+    document.getElementById('listingsCount').innerText = listings.length;
 }

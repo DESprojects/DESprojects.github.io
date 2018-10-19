@@ -1,0 +1,29 @@
+245092721	HP Pavilion 17 Laptop w/ Win 10 + AMD A8-6410 CPU @ 2 Ghz 8 GB Ram 1TB HDD 17.3 in LCD	10/19/2018
+245092496	Lenovo ideapad 100S-14IBR Laptop w/ Win 10 + Intel Celeron N3060 CPU @ 1.6 Ghz 2 GB Ram 32GB SSD 14 in LCD	10/19/2018
+245091727	Dell Inspiron 11-3148 Laptop w/ Win 10 + Intel Core i3-4010U CPU @ 1.7 Ghz 4 GB Ram 500GB HDD 11.6 in LCD	10/19/2018
+245092573	HP 15-bw069nr Laptop w/ Win 10 + AMD A9-9420 CPU @ 3 Ghz 4 GB Ram 1TB HDD 15.6 in LCD	10/19/2018
+245092720	Acer Aspire Es1-531-C2KX Laptop w/ Win 10 + Intel Celeron N3050 CPU @ 1.6 Ghz 4 GB Ram 500GB HDD 15.6 in LCD	10/19/2018
+245092506	HP Pavilion x360 m  Laptop w/ Win 10 + Intel Core i3-7100U CPU @ 2.4 Ghz 8 GB Ram 500GB HDD 14 in LCD	10/19/2018
+245092574	HP 15-u011dx Laptop w/ Win 10 + Intel Core i7-4510 CPU @ 2 Ghz 8 GB Ram 1TB HDD 15.6 in LCD	10/19/2018
+245091797	Dell Inspiron 3542 Laptop w/ Win 8.1 + Intel Core i3-4030U CPU @ 1.9 Ghz 4 GB Ram 1TB HDD 15.6 in LCD	10/19/2018
+245092264	Toshiba Satellite C55D-B  Laptop w/ Win 8.1 + AMD A8-6410 CPU @ 2 Ghz 4 GB Ram 1TB HDD 15.6 in LCD	10/19/2018
+245091720	Asus C300MA-DB01 Laptop w/ Chrome OS + Intel Celeron N2830 CPU @ 2.16 Ghz 2 GB Ram 16GB SSD 13.3 in LCD	10/19/2018
+245092002	HP 2000 Laptop w/ Win 8 + AMD E-300 CPU @ 1.3 Ghz 4 GB Ram 320GB HDD 15.6 in LCD	10/19/2018
+245091702	HP 3165 NGW Laptop w/ Win 10 + Intel Core i5-5200U CPU @ 2.2 Ghz 6 GB Ram 1TB HDD 15.6 in LCD	10/19/2018
+245092263	Asus GL552VW Laptop w/ Win 10 + Intel Core i7-6700HQ CPU @ 2.6 Ghz 16 GB Ram 1TB HDD 15.6 in LCD	10/19/2018
+245091702	HP 3165 NGW Laptop w/ Win 10 + Intel Core i5-5200U CPU @ 2.2 Ghz 6 GB Ram 1TB HDD 15.6 in LCD	10/19/2018
+245092322	HP 14-ax030wm Laptop w/ Win 10 + Intel Celeron N3060 CPU @ 1.6 Ghz 4 GB Ram 32GB SSD 11.6 in LCD	10/19/2018
+245092301	Asus X540SA Laptop w/ Win 10 + Intel Pentium N3710 CPU @ 1.6 Ghz 4 GB Ram 1TB HDD 15.6 in LCD	10/19/2018
+245091954	HP 15-f272wm Laptop w/ Win 10 + Intel Pentium N3540 CPU @ 2.16 Ghz 4 GB Ram 500GB HDD 15.6 in LCD	10/19/2018
+245091811	HP 15-bw011dx Laptop w/ Win 10 + AMD A6-9220 CPU @ 2.5 Ghz 4 GB Ram 500GB HDD 15.6 in LCD	10/19/2018
+245093227	Dell Vostro 1720 Laptop w/ Win Vista + Intel Core 2 Duo T6570 CPU @ 2.1 Ghz 4 GB Ram 320GB HDD 17.1 in LCD	10/19/2018
+245092806	Apple MacBook Pro Laptop w/ OS X 10.13.6 + Intel Core i7-4750HQ CPU @ 2 Ghz 8 GB Ram 256GB SSD 15.4 in LCD	10/19/2018
+245093203	HP 15-g029wm Laptop w/ Win 10 + AMD A4-5000 CPU @ 1.5 Ghz 4 GB Ram 500GB HDD 15.6 in LCD	10/19/2018
+245090827	Apple MacBook Pro Laptop w/ OS X 10.12 + Intel Core i5-2435M CPU @ 2.4 Ghz 4 GB Ram 500GB HDD 13.3 in LCD	10/19/2018
+245092868	HP 14-an012nr, Laptop w/ Win 10 + AMD E2-7110 CPU @ 1.8 Ghz, 4 GB Ram, 32GB SSD, 14 in LCD	10/19/2018
+245093803	HP 15-bn070wm Laptop w/ Win 10 + Intel Pentium N3710 CPU @ 1.6 Ghz 4 GB Ram 1TB HDD 15.6 in LCD	10/19/2018
+245090826	Acer Aspire E5-575 Laptop w/ Win 10 + Intel Core i5-6200U CPU @ 2.3 Ghz 8 GB Ram 250GB HDD 15.6 in LCD	10/19/2018
+245092867	Acer CB5-132T-C67Q Laptop w/ Chrome OS + Intel Celeron N3060 CPU @ 1.6 Ghz 4 GB Ram 32GB SSD 11.6 in LCD	10/19/2018
+245092960	Toshiba Satellite L855-S5121 Laptop w/ Win 8 + Intel Core i5-3230M CPU @ 2.6 Ghz 6 GB Ram 640GB HDD 15.6 in LCD	10/19/2018
+245093228	Acer Aspire 5755 Laptop w/ Win 7 HP + Intel Core i3-2330M CPU @ 2.2 Ghz 4 GB Ram 500GB HDD 15.6 in LCD	10/19/2018
+245092920	HP 15-bs115dx Laptop w/ Win 10 + Intel Core i5-8250U CPU @ 1.6 Ghz 8 GB Ram 1TB HDD 15.6 in LCD	10/19/2018

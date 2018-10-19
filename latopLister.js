@@ -1,5 +1,4 @@
 const title = document.querySelector('#app_bundle_product_form_title');
-const shortTitle = document.querySelector('#')
 const disclosure = document.querySelector('#app_bundle_product_form_carrier2')
 let addToEbay = document.querySelector('#app_bundle_product_form_addToEbay');
 const width = document.querySelector('#app_bundle_product_form_width');

@@ -3,8 +3,9 @@ const shortTitle = document.querySelector('#')
 const disclosure = document.querySelector('#app_bundle_product_form_carrier2')
 let addToEbay = document.querySelector('#app_bundle_product_form_addToEbay');
 const width = document.querySelector('#app_bundle_product_form_width');
-const height = document.querySelector('app_bundle_product_form_height');
-const depth = document.querySelector('app_bundle_product_form_height');
+const height = document.querySelector('#app_bundle_product_form_height');
+const depth = document.querySelector('#app_bundle_product_form_depth');
+const weight = document.querySelector('#app_bundle_product_form_weight');
 
 setTimeout(main(), 500);
 

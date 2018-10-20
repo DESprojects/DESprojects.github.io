@@ -17,34 +17,36 @@ function main(){
     addItemToEbay();
     setDisclosure();
     shipping();
-}
+    
+    //Functions ========================================================================================
 
-//Functions ========================================================================================
+    //Remove commas from Title
+    function removeFromTitle(str) {
+        title.value = str;
+    }
 
-//Remove commas from Title
-function removeFromTitle(str){
-    title.value = str;
-}
+    //Change "Add to eBay" Value
+    function addItemToEbay() {
+        addToEbay.value = '1';
+    }
 
-//Change "Add to eBay" Value
-function addItemToEbay(){
-    addToEbay.value = '1';
-}
+    //Set shipping disclosure
+    function setDisclosure() {
+        disclosure.checked = true;
+    }
 
-//Set shipping disclosure
-function setDisclosure(){
-    disclosure.checked = true;
-}
+    //Change shipping dimensions
+    function shipping() {
+        width.value = '18';
+        height.value = '14';
+        depth.value = '8';
+        weight.value = '9';
+    }
 
-//Change shipping dimensions
-function shipping(){
-    width.value = '18';
-    height.value = '14';
-    depth.value = '8';
-    weight.value = '9';
-}
+    //Remove commas from Short Title
+    function removeFromShortTitle(str) {
+        CKEDITOR.instances.app_bundle_product_form_shortDescription.setData(`<p>${str}</p>`)
+    }
 
-//Remove commas from Short Title
-function removeFromShortTitle(str){
-    CKEDITOR.instances.app_bundle_product_form_shortDescription.setData(`<p>${str}</p>`)
+
 }

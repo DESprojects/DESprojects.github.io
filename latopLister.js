@@ -1,27 +1,31 @@
 const title = document.querySelector('#app_bundle_product_form_title');
 const disclosure = document.querySelector('#app_bundle_product_form_carrier2')
-let addToEbay = document.querySelector('#app_bundle_product_form_addToEbay');
+const addToEbay = document.querySelector('#app_bundle_product_form_addToEbay');
 const width = document.querySelector('#app_bundle_product_form_width');
 const height = document.querySelector('#app_bundle_product_form_height');
 const depth = document.querySelector('#app_bundle_product_form_depth');
 const weight = document.querySelector('#app_bundle_product_form_weight');
 
+//On load run functions ============================================================================
 setTimeout(main(), 500);
 
 //Main =============================================================================================
 function main(){
-    removeFromTitle();
+let titleString = title.value.replace(/,/g, '');
+    removeFromTitle(titleString);
+    removeFromShortTitle(titleString);
     addItemToEbay();
     setDisclosure();
     shipping();
 }
-//On load run functions
+
 //Functions ========================================================================================
 
 //Remove commas from Title
-function removeFromTitle(){
-    title.value = title.value.replace(/,/g, '');
+function removeFromTitle(str){
+    title.value = str;
 }
+
 //Change "Add to eBay" Value
 function addItemToEbay(){
     addToEbay.value = '1';
@@ -40,9 +44,7 @@ function shipping(){
     weight.value = '9';
 }
 
-//Future features ===================================================================================
-
 //Remove commas from Short Title
-function removeFromShortTitle(){
-
+function removeFromShortTitle(str){
+    CKEDITOR.instances.app_bundle_product_form_shortDescription.setData(`<p>${str}</p>`)
 }

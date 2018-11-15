@@ -166,13 +166,13 @@ function fillTemplate(i) {
         <br/>&nbsp;<br/>
         <strong>Features:</strong><br/>
         <ul>${breakMultilines(features)}</ul>
-        <br/>&nbsp;
+        <br/>
         <strong>What's included:</strong><br/>
         <ul>${breakMultilines(included)}</ul>
-        <br/>&nbsp;
+        <br/>
         <strong>What's not included:</strong><br/>
         <ul>${breakMultilines(notIncluded)}</ul>
-        <br/>&nbsp;
+        <br/>
         <strong>Condition:</strong><br/>
         <ul>${breakMultilines(condition)}</ul>`;
 

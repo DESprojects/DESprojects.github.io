@@ -82,13 +82,13 @@ ${sku}
 <br/>&nbsp;
 <strong>Features:</strong><br/>
 ${features}
-<br/>&nbsp;
+<br/>
 <strong>What's included:</strong><br/>
 ${included}
-<br/>&nbsp;
+<br/>
 <strong>What's not included:</strong><br/>
 ${notIncluded}
-<br/>&nbsp;
+<br/>
 <strong>Condition:</strong><br/>
 ${condition}
 `;

@@ -3,7 +3,7 @@ setTimeout(main(), 500);
 
 //Main =============================================================================================
 function main(){
-    let title = document.querySelector('#app_bundle_product_form_title');
+    let title = document.querySelector('#app_bundle_product_form_title').value;
     let disclosure = document.querySelector('#app_bundle_product_form_carrier2')
     let addToEbay = document.querySelector('#app_bundle_product_form_addToEbay');
     let width = document.querySelector('#app_bundle_product_form_width');
@@ -20,13 +20,13 @@ function main(){
     shipping();
     selectTitle();
     setDescriptionTemplate();
-	console.log('new test');
+    console.log('new test');
     
     //Functions ========================================================================================
 
     //Remove commas from Title
     function removeFromTitle(str) {
-        title.value = str;
+        title = str;
     }
 
     //Change "Add to eBay" Value

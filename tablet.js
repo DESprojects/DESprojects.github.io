@@ -12,6 +12,8 @@ function main(){
     let depth = document.querySelector('#app_bundle_product_form_depth');
     let weight = document.querySelector('#app_bundle_product_form_weight');
     let titleString = title.value.replace(/,/g, '');
+    let itemNumber = document.getElementsByClassName('description-header')[0].innerText
+
     
     removeFromTitle(titleString);
     removeFromShortTitle(titleString);

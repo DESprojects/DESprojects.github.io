@@ -11,7 +11,7 @@ function main(){
     let depth = document.querySelector('#app_bundle_product_form_depth');
     let weight = document.querySelector('#app_bundle_product_form_weight');
     let titleString = title.value.replace(/,/g, '');
-    let itemNumber = document.querySelector('.description-header').innerText;
+    let itemNumber = document.getElementsByClassName('description-header')[0].innerText
     
     removeFromTitle(titleString);
     removeFromShortTitle(titleString);
@@ -20,6 +20,7 @@ function main(){
     shipping();
     selectTitle();
     setDescriptionTemplate();
+	console.log('new test');
     
     //Functions ========================================================================================
 
@@ -81,7 +82,9 @@ ${itemNumber}</p>
 <p><strong>Condition:</strong></p>
 
 <ul>
-	<li>Condition 1</li>
+	<li>Used in good working condition</li>
+	<li>Shows signs of use such as scuffs and scratches</li>
+	<li>See photos for details</li>
 </ul>
 `)
     }

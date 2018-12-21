@@ -17,7 +17,7 @@ function main(){
     addItemToEbay();
     setDisclosure();
     shipping();
-    copyToClip(title.value)
+    selectTitle();
     
     //Functions ========================================================================================
 
@@ -49,11 +49,8 @@ function main(){
         CKEDITOR.instances.app_bundle_product_form_shortDescription.setData(`<p>${str}</p>`)
     }
     
-    //Copy title to clipboard
-    function copyToClip() {
+    function selectTitle(){
         title.select()
-        document.execCommand('copy')
-        alert(title + ' copied!')
     };
 
 }

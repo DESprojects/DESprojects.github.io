@@ -21,7 +21,7 @@ function main(){
     shipping();
     selectTitle();
     setDescriptionTemplate();
-    console.log('new test2');
+    console.log('new test3');
     
     //Functions ========================================================================================
 
@@ -90,8 +90,9 @@ ${itemNumber}</p>
 `)
     }
     
-    function selectTitle(){
+/*    function selectTitle(){
         title.select()
     };
+*/
 
 }

@@ -17,6 +17,7 @@ function main(){
     addItemToEbay();
     setDisclosure();
     shipping();
+    selectTitle();
     
     //Functions ========================================================================================
 
@@ -47,6 +48,9 @@ function main(){
     function removeFromShortTitle(str) {
         CKEDITOR.instances.app_bundle_product_form_shortDescription.setData(`<p>${str}</p>`)
     }
-
+    
+    function selectTitle(){
+        title.select()
+    };
 
 }

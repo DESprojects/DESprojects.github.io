@@ -4,6 +4,7 @@ setTimeout(main(), 500);
 //Main =============================================================================================
 function main(){
     let title = document.querySelector('#app_bundle_product_form_title');
+    let newTitle = document.querySelector('#app_bundle_product_form_title').value;
     let disclosure = document.querySelector('#app_bundle_product_form_carrier2')
     let addToEbay = document.querySelector('#app_bundle_product_form_addToEbay');
     let width = document.querySelector('#app_bundle_product_form_width');
@@ -17,7 +18,8 @@ function main(){
     addItemToEbay();
     setDisclosure();
     shipping();
-    selectTitle();
+   // selectTitle();
+    setDescriptionTemplate();
     
     //Functions ========================================================================================
 
@@ -49,7 +51,45 @@ function main(){
         CKEDITOR.instances.app_bundle_product_form_shortDescription.setData(`<p>${str}</p>`)
     }
 
-    function selectTitle(){
+        //Set template for Long Description
+    function setDescriptionTemplate(){
+        CKEDITOR.instances.app_bundle_product_form_longDescription.setData(`<p>Your satisfaction is our number one goal. Keep in mind that we offer hassle-free returns if needed. If you have any questions or problems, please contact us.</p>
+
+<p>Please Note: All included items are shown in the pictures</p>
+
+<p>${newTitle}<br />
+${itemNumber}</p>
+
+<p><strong>Features:</strong></p>
+
+<ul>
+	<li>Feature 1</li>
+</ul>
+
+<p><strong>What&#39;s included:</strong></p>
+
+<ul>
+	<li>${newTitle}</li>
+</ul>
+
+<p><strong>What&#39;s not included:</strong></p>
+
+<ul>
+	<li>Any other accessories</li>
+</ul>
+
+<p><strong>Condition:</strong></p>
+
+<ul>
+	<li>Used in good working condition</li>
+	<li>Shows signs of use such as scuffs and scratches</li>
+	<li>See photos for details</li>
+</ul>
+`)
+    }
+    
+   /* function selectTitle(){
        title.select()
     };
+    */
 }

@@ -20,7 +20,7 @@ function main(){
     shipping();
     selectTitle();
     setDescriptionTemplate();
-    console.log('new test');
+    console.log('new test1');
     
     //Functions ========================================================================================
 

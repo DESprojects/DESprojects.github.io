@@ -19,9 +19,9 @@ function main(){
     addItemToEbay();
     setDisclosure();
     shipping();
-    selectTitle();
+   // selectTitle();
     setDescriptionTemplate();
-    console.log('new test3');
+    console.log('new test4');
     
     //Functions ========================================================================================
 

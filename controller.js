@@ -11,6 +11,7 @@ function main(){
     let depth = document.querySelector('#app_bundle_product_form_depth');
     let weight = document.querySelector('#app_bundle_product_form_weight');
     let titleString = title.value.replace(/,/g, '');
+    let itemNumber = document.querySelector('.description-header').innerText;
     
     removeFromTitle(titleString);
     removeFromShortTitle(titleString);
@@ -18,6 +19,7 @@ function main(){
     setDisclosure();
     shipping();
     selectTitle();
+    setDescriptionTemplate();
     
     //Functions ========================================================================================
 
@@ -48,7 +50,42 @@ function main(){
     function removeFromShortTitle(str) {
         CKEDITOR.instances.app_bundle_product_form_shortDescription.setData(`<p>${str}</p>`)
     }
+    
+    //Set template for Long Description
+    function setDescriptionTemplate(){
+        CKEDITOR.instances.app_bundle_product_form_longDescription.setData(`<p>Your satisfaction is our number one goal. Keep in mind that we offer hassle-free returns if needed. If you have any questions or problems, please contact us.</p>
 
+<p>Please Note: All included items are shown in the pictures</p>
+
+<p>${title}<br />
+${itemNumber}</p>
+
+<p><strong>Features:</strong></p>
+
+<ul>
+	<li>Feature 1</li>
+</ul>
+
+<p><strong>What&#39;s included:</strong></p>
+
+<ul>
+	<li>${title}</li>
+</ul>
+
+<p><strong>What&#39;s not included:</strong></p>
+
+<ul>
+	<li>Any other accessories</li>
+</ul>
+
+<p><strong>Condition:</strong></p>
+
+<ul>
+	<li>Condition 1</li>
+</ul>
+`)
+    }
+    
     function selectTitle(){
         title.select()
     };

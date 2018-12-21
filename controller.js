@@ -3,14 +3,15 @@ setTimeout(main(), 500);
 
 //Main =============================================================================================
 function main(){
-    let title = document.querySelector('#app_bundle_product_form_title').value;
+    let title = document.querySelector('#app_bundle_product_form_title');
+    let newTitle = document.querySelector('#app_bundle_product_form_title').value;
     let disclosure = document.querySelector('#app_bundle_product_form_carrier2')
     let addToEbay = document.querySelector('#app_bundle_product_form_addToEbay');
     let width = document.querySelector('#app_bundle_product_form_width');
     let height = document.querySelector('#app_bundle_product_form_height');
     let depth = document.querySelector('#app_bundle_product_form_depth');
     let weight = document.querySelector('#app_bundle_product_form_weight');
-    let titleString = title.replace(/,/g, '');
+    let titleString = title.value.replace(/,/g, '');
     let itemNumber = document.getElementsByClassName('description-header')[0].innerText
     
     removeFromTitle(titleString);
@@ -20,7 +21,7 @@ function main(){
     shipping();
     selectTitle();
     setDescriptionTemplate();
-    console.log('new test1');
+    console.log('new test2');
     
     //Functions ========================================================================================
 
@@ -58,7 +59,7 @@ function main(){
 
 <p>Please Note: All included items are shown in the pictures</p>
 
-<p>${title}<br />
+<p>${newTitle}<br />
 ${itemNumber}</p>
 
 <p><strong>Features:</strong></p>
@@ -70,7 +71,7 @@ ${itemNumber}</p>
 <p><strong>What&#39;s included:</strong></p>
 
 <ul>
-	<li>${title}</li>
+	<li>${newTitle}</li>
 </ul>
 
 <p><strong>What&#39;s not included:</strong></p>

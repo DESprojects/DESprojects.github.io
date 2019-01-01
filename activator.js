@@ -11,23 +11,23 @@ function main(){
     setDisclosure();
     setStatus();
     console.log('debug test');
-}
 
-//Change "Add to eBay" Value
-function addItemToEbay(){
-    addToEbay.value = '1';
-}
+    //Change "Add to eBay" Value
+    function addItemToEbay(){
+        addToEbay.value = '1';
+    }
 
-//Set shipping disclosure
-function setDisclosure(){
-    disclosure.checked = true;
-}
+    //Set shipping disclosure
+    function setDisclosure(){
+        disclosure.checked = true;
+    }
 
-//Set item Status and Submit
-function setStatus(){
-    itemStatus.value = '1';
-    
-    function submitForm(){
-        form.submit();
+    //Set item Status and Submit
+    function setStatus(){
+        itemStatus.value = '1';
+
+        function submitForm(){
+            form.submit();
+        }
     }
 }

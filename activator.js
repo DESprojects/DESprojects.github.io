@@ -10,6 +10,7 @@ function main(){
     addItemToEbay();
     setDisclosure();
     setStatus();
+    submitForm();
     console.log('debug test');
 
     //Change "Add to eBay" Value

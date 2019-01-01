@@ -1,11 +1,12 @@
-const addToEbay = document.querySelector('#app_bundle_product_form_addToEbay');
-const itemStatus = document.querySelector('#app_bundle_product_form_status');
-const form = document.getElementsByName('app_bundle_product_form')[0];
-
 setTimeout(main(), 500);
 
 //Main =============================================================================================
 function main(){
+    let disclosure = document.querySelector('#app_bundle_product_form_carrier2');
+    let addToEbay = document.querySelector('#app_bundle_product_form_addToEbay');
+    let itemStatus = document.querySelector('#app_bundle_product_form_status');
+    let form = document.getElementsByName('app_bundle_product_form')[0];
+    
     addItemToEbay();
     setDisclosure();
     setStatus();

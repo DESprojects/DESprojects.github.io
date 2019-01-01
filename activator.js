@@ -1,4 +1,3 @@
-const disclosure = document.querySelector('#app_bundle_product_form_carrier2')
 const addToEbay = document.querySelector('#app_bundle_product_form_addToEbay');
 const itemStatus = document.querySelector('#app_bundle_product_form_status');
 const form = document.getElementsByName('app_bundle_product_form')[0];
@@ -10,6 +9,7 @@ function main(){
     addItemToEbay();
     setDisclosure();
     setStatus();
+    console.log('debug test');
 }
 
 //Change "Add to eBay" Value

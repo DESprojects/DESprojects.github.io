@@ -16,7 +16,12 @@ function main(){
     function addItemToEbay(){
         addToEbay.value = '1';
     }
-
+    
+    //Submit the form when clicked
+    function submitForm(){
+        form.submit();
+    }
+    
     //Set shipping disclosure
     function setDisclosure(){
         disclosure.checked = true;

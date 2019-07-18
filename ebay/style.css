@@ -26,7 +26,18 @@ html {
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bolder;
-    font-size: 3.5em;
+    font-size: 6em;
+    color: #f3f3f3;
+    width: 40%;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
     color: #f3f3f3;
     width: 40%;
     font-weight: 300;

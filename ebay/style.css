@@ -32,6 +32,7 @@ h1 {
     font-weight: 900;
     text-align: center;
     text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    user-select: none;
 }
 
 h2 {
@@ -43,6 +44,7 @@ h2 {
     font-weight: 300;
     text-align: center;
     text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    user-select: none;
 }
 
 main {

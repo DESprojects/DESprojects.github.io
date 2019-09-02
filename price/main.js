@@ -18,6 +18,7 @@ searchInput.addEventListener('focusin', function(){
 
 searchInput.addEventListener('keyup', function(e){
     if(e.which === 13){
-        window.open('https://www.ebay.com/sch/i.html?_from=R40&_nkw='+searchInput.value+'&_sacat=0&LH_TitleDesc=0&LH_Complete=1&LH_Sold=1&LH_TitleDesc=0&_oac=1&LH_BIN=1&LH_ItemCondition=4&LH_PrefLoc=1&_sop=16', '_blank');;
+        window.open('https://www.ebay.com/sch/i.html?_from=R40&_nkw='+searchInput.value+'&_sacat=0&LH_TitleDesc=0&LH_Complete=1&LH_Sold=1&LH_TitleDesc=0&_oac=1&LH_BIN=1&LH_ItemCondition=4&LH_PrefLoc=1&_sop=16', '_blank');
+        searchInput.value = '';
     }
 })
